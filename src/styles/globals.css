@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media only screen and (max-width:1280px) {
+    .under-banners-category .mgz-column:nth-child(5) {
+        display: none;
+    }
+    .under-banners-category .mgz-column:nth-child(6) {
+        display: none;
+    }
+   
+}
+@media only screen and (min-width: 768px) and (max-width:1280px) {
+    .under-banners-category .mgz-column {
+        flex-basis: 25%;
+    }
+    .under-banners-category .mgz-img-content-title {
+        font-size: 16px !important;
+    }
+}
+@media only screen and (max-width: 767px)  {
+    .under-banners-category .mgz-column {
+        flex-basis: 50%;
+    }
+    .under-banners-category .mgz-column .image-container {
+        width: 100% !important;
+    }
+    .under-banners-category .mgz-column .image-container img {
+        width: 100%;
+    }
+    .under-banners-category .mgz-img-content-title {
+        font-size: 14px !important;
+    }
+    .under-banners-category .mgz-element-inner {
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
+} 
